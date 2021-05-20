@@ -42,7 +42,7 @@ body {
     height: auto;
 }
 
-.main {
+.main-temp {
     padding: 20px;
     margin : 60px;
     background-color: #34656d;
@@ -51,9 +51,28 @@ body {
     box-shadow: 5px 5px 5px 0px black;
 }
 
+.main-length {
+    padding: 20px;
+    margin : 10px;
+    background-color: #34656d;
+    border-radius:10px ;
+    color: #fffbdf;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+.result {
+    border: 2px solid #34656d;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px 0px black;
+    background-color: #34656d;
+    color: #fffbdf;
+}
 
 .formula {
-    border: 2px solid #34656d;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 2px;
@@ -68,11 +87,18 @@ body {
     border:2px solid #fffbdf;
     background-color: #334443;
     padding: 10px;
-    width: 280px;
-    height: 500px;
     margin: 10px;
     box-shadow: 5px 5px 5px 0px black;
 }
+
+.card-length-column {
+    border:2px solid #fffbdf;
+    background-color: #334443;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
 
 .row-card {
     display: inline-flex;
@@ -80,12 +106,15 @@ body {
 }
 
 input {
-    width: 250px;
+    width: 251px;
     height: 40px;
     box-shadow: 5px 5px 5px 0px black;
     border: 2px solid black;
 }
 
+.inputLength {
+    width: 251px;
+}
 
 
 
@@ -102,7 +131,7 @@ input {
         overflow-x: hidden;
     }
 
-    .main {
+    .main-temp {
         padding: 20px;
         margin : 10px;
         background-color: #34656d;
@@ -123,6 +152,15 @@ input {
         padding: 10px;
         width: 310px;
         height: 500px;
+        margin: 10px;
+        box-shadow: 5px 5px 5px 0px black;
+    }
+    .card-length-column {
+        border:2px solid #fffbdf;
+        background-color: #334443;
+        padding: 10px;
+        width: 280px;
+        height: 900px;
         margin: 10px;
         box-shadow: 5px 5px 5px 0px black;
     }
