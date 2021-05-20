@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <title>Temperature Converter</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/programming.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <a data-aos="zoom-in-down" data-aos-duration="700" class="navbar-brand" href="https://arifian853.github.io" target="_blank">
+              <img class="img-logo-navbar" src="img/programming.png"> Arifian Saputra
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-item-bg-dr text-dark" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SOCIAL
+                  </a> 
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.facebook.com/arifian.syaputra.9/" target="_blank" > Facebook</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/arifiansaputra_/" target="_blank" > Instagram</a>
+                    <a class="dropdown-item" href="https://twitter.com/ArifianSaputra1" target="_blank" > Twitter</a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/arifian-saputra-08135a178/" target="_blank" > LinkedIn</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0" href="https://github.com/arifian853" target="_blank">GITHUB</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <body>
+        <br />
+        <br />
+        <h2 align="center">Temperature Converter</h2>
+        <div class="main row-card row">
+                <div class="card-column col" data-aos="zoom-in-down" data-aos-duration="700">
+                    <p><b>Celsius to Fahrenheit , Kelvin , Reamur</b></p>
+                    <p>
+                    <label>Celsius : </label> <br />
+                    <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                    </p>
+                    <p>- Fahrenheit : <span id="outputFahrenheit">  </span>℉</p>
+                    <p class="formula">Formula : ℉=(℃*1.8)+32</p>
+                    <p>- Kelvin : <span id="outputKelvin">  </span> K</p>
+                    <p class="formula">Formula : K=℃+273.15</p>
+                    <p>- Reamur : <span id="outputReamur">  </span> °R</p>
+                    <p class="formula">Formula : °R=(4/5)*℃</p>
+                </div>
+
+                <div class="card-column col" data-aos="zoom-in-down" data-aos-duration="700">
+                    <p><b>Fahrenheit to Celcius , Kelvin , Reamur</b></p>
+                    <p>
+                    <label>Fahrenheit : </label> <br />
+                    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
+                    </p>
+                    <p>- Celcius : <span id="outputCelcius2">  </span>°C</p>
+                    <p class="formula">Formula : ℃=(℉-32)/1.8</p>
+                    <p>- Kelvin : <span id="outputKelvin2">  </span> K</p>
+                    <p class="formula">Formula : K=((℉-32)/1.8)+273.15</p>
+                    <p>- Reamur : <span id="outputReamur2">  </span> °R</p>
+                    <p class="formula">Formula : °R= 4/9*(℉-32)</p>
+                </div>
+
+                <div class="card-column col" data-aos="zoom-in-down" data-aos-duration="700">
+                  <p><b>Kelvin to Celcius , Fahrenheit , Reamur</b></p>
+                  <p>
+                  <label>Kelvin : </label> <br />
+                  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter3(this.value)" onchange="temperatureConverter3(this.value)">
+                  </p>
+                  <p>- Celcius : <span id="outputCelcius3">  </span>°C</p>
+                  <p class="formula">Formula : ℃=K-273.15</p>
+                  <p>- Fahrenheit : <span id="outputFahrenheit3">  </span>℉</p>
+                  <p class="formula">Formula :℉=((K-273.15)*1.8)+32</p>
+                  <p>- Reamur : <span id="outputReamur3">  </span> °R</p>
+                  <p class="formula">Formula : °R= (K-273.15)*(4 / 5)</p>
+              </div>
+
+              <div class="card-column col" data-aos="zoom-in-down" data-aos-duration="700">
+                <p><b>Reamur to Celcius , Fahrenheit , Kelvin</b></p>
+                <p>
+                <label>Reamur : </label> <br />
+                <input id="inputReamur" type="number" placeholder="Reamur" oninput="temperatureConverter4(this.value)" onchange="temperatureConverter4(this.value)">
+                </p>
+                <p>- Celcius : <span id="outputCelcius4">  </span>°C</p>
+                <p class="formula">Formula : ℃=K-273.15</p>
+                <p>- Fahrenheit : <span id="outputFahrenheit4">  </span>℉</p>
+                <p class="formula">Formula :℉=(°R*(9/4)) + 32</p>
+                <p>- Kelvin : <span id="outputKelvin4">  </span> K</p>
+                <p class="formula">Formula : K=(°R*(5/4)) + 273.15</p>
+            </div>
+        </div>
+        
+    </body>
+</html>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>  

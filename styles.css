@@ -1,0 +1,134 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c6ffc1;
+    padding: 0;
+    margin: 0;
+}
+
+.aos-init:not(.aos-animate):after {
+    position: fixed;
+    }
+
+.navbar {
+    z-index: 2;
+    background-color: #34656d;
+    box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+    font-size: large;
+}
+.navbar-brand {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.navbar li {
+    font-size: 90%;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 7px;
+    padding: 0
+}
+.navbar .link-0 a:hover {
+    color: #00B8E2 ;
+    text-decoration: none;
+}
+
+.img-logo-navbar {
+    width: 60px;
+    height: auto;
+}
+
+.main {
+    padding: 20px;
+    margin : 60px;
+    background-color: #34656d;
+    border-radius:10px ;
+    color: #fffbdf;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+
+.formula {
+    border: 2px solid #34656d;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px 0px black;
+    background-color: #c6ffc1;
+    color: black;
+}
+
+.card-column {
+    border:2px solid #fffbdf;
+    background-color: #334443;
+    padding: 10px;
+    width: 280px;
+    height: 500px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+.row-card {
+    display: inline-flex;
+    align-self: center;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    box-shadow: 5px 5px 5px 0px black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    body, html {
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .main {
+        padding: 20px;
+        margin : 10px;
+        background-color: #34656d;
+        border-radius:10px ;
+        color: #fffbdf;
+        box-shadow: 5px 5px 5px 0px black;
+    }
+
+    input {
+        width: 286px;
+        box-shadow: 5px 5px 5px 0px black;
+        border: 2px solid black;
+    }
+
+    .card-column {
+        border:2px solid #fffbdf;
+        background-color: #334443;
+        padding: 10px;
+        width: 310px;
+        height: 500px;
+        margin: 10px;
+        box-shadow: 5px 5px 5px 0px black;
+    }
+    
+    .row-card {
+        display: inline-block;
+        align-self: center;
+    }
+}
