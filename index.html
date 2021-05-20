@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="img/programming.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
         <link rel="stylesheet" href="styles.css">
@@ -47,19 +47,24 @@
     <body>
         <br />
         <br />
+
         <h2 align="center">Temperature Converter</h2>
-        <div class="main row-card row">
+        <p align="center"><b>For Famous and most used unit in the world. (Celcius,Fahrenheit,Kelvin,Reamur)</b></p>
+        <div class="main-temp row-card row">
                 <div class="card-column col" data-aos="zoom-in-down" data-aos-duration="700">
                     <p><b>Celsius to Fahrenheit , Kelvin , Reamur</b></p>
                     <p>
                     <label>Celsius : </label> <br />
-                    <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                    <input id="inputCelsius" type="number" placeholder=" Input Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
                     </p>
-                    <p>- Fahrenheit : <span id="outputFahrenheit">  </span>℉</p>
+                    <hr />
+                    <p class="result">Fahrenheit : <span id="outputFahrenheit">  </span>℉</p>
                     <p class="formula">Formula : ℉=(℃*1.8)+32</p>
-                    <p>- Kelvin : <span id="outputKelvin">  </span> K</p>
+                    <hr />
+                    <p class="result">Kelvin : <span id="outputKelvin">  </span> K</p>
                     <p class="formula">Formula : K=℃+273.15</p>
-                    <p>- Reamur : <span id="outputReamur">  </span> °R</p>
+                    <hr />
+                    <p class="result">Reamur : <span id="outputReamur">  </span> °R</p>
                     <p class="formula">Formula : °R=(4/5)*℃</p>
                 </div>
 
@@ -67,13 +72,16 @@
                     <p><b>Fahrenheit to Celcius , Kelvin , Reamur</b></p>
                     <p>
                     <label>Fahrenheit : </label> <br />
-                    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
+                    <input id="inputFahrenheit" type="number" placeholder=" Input Fahrenheit" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
                     </p>
-                    <p>- Celcius : <span id="outputCelcius2">  </span>°C</p>
+                    <hr />
+                    <p class="result">Celcius : <span id="outputCelcius2">  </span>°C</p>
                     <p class="formula">Formula : ℃=(℉-32)/1.8</p>
-                    <p>- Kelvin : <span id="outputKelvin2">  </span> K</p>
+                    <hr />
+                    <p class="result">Kelvin : <span id="outputKelvin2">  </span> K</p>
                     <p class="formula">Formula : K=((℉-32)/1.8)+273.15</p>
-                    <p>- Reamur : <span id="outputReamur2">  </span> °R</p>
+                    <hr />
+                    <p class="result">Reamur : <span id="outputReamur2">  </span> °R</p>
                     <p class="formula">Formula : °R= 4/9*(℉-32)</p>
                 </div>
 
@@ -81,13 +89,16 @@
                   <p><b>Kelvin to Celcius , Fahrenheit , Reamur</b></p>
                   <p>
                   <label>Kelvin : </label> <br />
-                  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter3(this.value)" onchange="temperatureConverter3(this.value)">
+                  <input id="inputKelvin" type="number" placeholder=" Input Kelvin" oninput="temperatureConverter3(this.value)" onchange="temperatureConverter3(this.value)">
                   </p>
-                  <p>- Celcius : <span id="outputCelcius3">  </span>°C</p>
+                  <hr />
+                  <p class="result">Celcius : <span id="outputCelcius3">  </span>°C</p>
                   <p class="formula">Formula : ℃=K-273.15</p>
-                  <p>- Fahrenheit : <span id="outputFahrenheit3">  </span>℉</p>
+                  <hr />
+                  <p class="result">Fahrenheit : <span id="outputFahrenheit3">  </span>℉</p>
                   <p class="formula">Formula :℉=((K-273.15)*1.8)+32</p>
-                  <p>- Reamur : <span id="outputReamur3">  </span> °R</p>
+                  <hr />
+                  <p class="result">Reamur : <span id="outputReamur3">  </span> °R</p>
                   <p class="formula">Formula : °R= (K-273.15)*(4 / 5)</p>
               </div>
 
@@ -95,15 +106,50 @@
                 <p><b>Reamur to Celcius , Fahrenheit , Kelvin</b></p>
                 <p>
                 <label>Reamur : </label> <br />
-                <input id="inputReamur" type="number" placeholder="Reamur" oninput="temperatureConverter4(this.value)" onchange="temperatureConverter4(this.value)">
+                <input id="inputReamur" type="number" placeholder=" Input Reamur" oninput="temperatureConverter4(this.value)" onchange="temperatureConverter4(this.value)">
                 </p>
-                <p>- Celcius : <span id="outputCelcius4">  </span>°C</p>
+                <hr />
+                <p class="result">Celcius : <span id="outputCelcius4">  </span>°C</p>
                 <p class="formula">Formula : ℃=K-273.15</p>
-                <p>- Fahrenheit : <span id="outputFahrenheit4">  </span>℉</p>
+                <hr />
+                <p class="result">Fahrenheit : <span id="outputFahrenheit4">  </span>℉</p>
                 <p class="formula">Formula :℉=(°R*(9/4)) + 32</p>
-                <p>- Kelvin : <span id="outputKelvin4">  </span> K</p>
+                <hr />
+                <p class="result">Kelvin : <span id="outputKelvin4">  </span> K</p>
                 <p class="formula">Formula : K=(°R*(5/4)) + 273.15</p>
             </div>
+        </div>
+
+        <br />
+
+        <h2 align="center">Length Converter</h2>
+        <p align="center"><b>All conversion from Milimeter (Mm) to Kilometer (Km)</b></p>
+
+        <div class="main-length">
+
+          <div class="card-length-column" data-aos="zoom-in-down" data-aos-duration="700">
+            <h5><b>Kilometer (Km) to All</b></h5>
+            <br />
+            <p>
+            <label>Km (Kilometer) : </label> <br />
+            <input class="inputLength" id="inputM" type="number" placeholder="Kilometer" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+            </p>
+            <p>- Kilometer : <span id="outputKm">  </span> Km</p>
+            <p class="formula">Formula : Km = Km * 1</p>
+            <p>- Hectometer : <span id="outputHm">  </span> Hm</p>
+            <p class="formula">Formula : Hm = Km * 10</p>
+            <p>- Decameter : <span id="outputDam">  </span> Dam</p>
+            <p class="formula">Formula : Dam = Km * 100</p>
+            <p>- Meter : <span id="outputM">  </span> M</p>
+            <p class="formula">Formula : M = Km * 1000</p>
+            <p>- Decimeter : <span id="outputDm">  </span> Dm</p>
+            <p class="formula">Formula : Dm = Km * 10000</p>
+            <p>- Centimeter : <span id="outputCm">  </span> Cm</p>
+            <p class="formula">Formula : Cm = Km * 100000</p>
+            <p>- Milimeter : <span id="outputMm">  </span> Mm</p>
+            <p class="formula">Formula : Mm = Km * 1000000</p>
+        </div>
+
         </div>
         
     </body>
