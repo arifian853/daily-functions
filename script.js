@@ -25,3 +25,14 @@ function temperatureConverter4(valNum4) {
     document.getElementById("outputFahrenheit4").innerHTML=(valNum4 * (9 / 4)) + 32;
     document.getElementById("outputKelvin4").innerHTML=(valNum4 * (5 / 4)) + 273.15;
 }
+
+function LengthConverter(valNum5) {
+    valNum5 = parseFloat(valNum5);
+    document.getElementById("outputKm").innerHTML=valNum5*1;
+    document.getElementById("outputHm").innerHTML=valNum5*10;
+    document.getElementById("outputDam").innerHTML=valNum5*100;
+    document.getElementById("outputM").innerHTML=valNum5*1000;
+    document.getElementById("outputDm").innerHTML=valNum5*10000;
+    document.getElementById("outputCm").innerHTML=valNum5*100000;
+    document.getElementById("outputMm").innerHTML=valNum5*1000000;
+}
