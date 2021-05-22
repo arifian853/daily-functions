@@ -6,8 +6,6 @@ html {
 
 body {
     background-color: #c6ffc1;
-    padding: 0;
-    margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -53,11 +51,12 @@ body {
 
 .main-length {
     padding: 20px;
-    margin : 10px;
+    margin : 60px;
     background-color: #34656d;
     border-radius:10px ;
     color: #fffbdf;
     box-shadow: 5px 5px 5px 0px black;
+    width: fit-content;
 }
 
 .result {
@@ -89,6 +88,7 @@ body {
     padding: 10px;
     margin: 10px;
     box-shadow: 5px 5px 5px 0px black;
+    width: 275px;
 }
 
 .card-length-column {
@@ -97,6 +97,7 @@ body {
     padding: 10px;
     margin: 10px;
     box-shadow: 5px 5px 5px 0px black;
+    width: fit-content;
 }
 
 
