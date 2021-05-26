@@ -1,38 +1,49 @@
-function temperatureConverter(valNum) {
-    valNum = parseFloat(valNum);
-    document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
-    document.getElementById("outputKelvin").innerHTML=valNum+273.15;
-    document.getElementById("outputReamur").innerHTML=(4/5)*valNum;
+const celciusInput = document.querySelector('#celcius > input');
+const fahrenheitInput = document.querySelector('#fahrenheit > input');
+const kelvinInput = document.querySelector('#kelvin > input');
+const reaumurInput = document.querySelector('#reaumur > input');
+
+function celciusToAll() {
+    const celciusTemp = parseFloat(celciusInput.value);
+    const fahrenheitTemp = (celciusTemp * (9/5)) + 32;
+    const kelvinTemp = celciusTemp + 273.15;
+    const reaumurTemp = (4/5) * celciusTemp; 
+    fahrenheitInput.value = fahrenheitTemp;
+    kelvinInput.value = kelvinTemp;
+    reaumurInput.value = reaumurTemp;
 }
 
-function temperatureConverter2(valNum2) {
-    valNum2 = parseFloat(valNum2);
-    document.getElementById("outputCelcius2").innerHTML=(valNum2-32)/1.8;
-    document.getElementById("outputKelvin2").innerHTML=((valNum2-32)/1.8)+273.15;
-    document.getElementById("outputReamur2").innerHTML=4/9*(valNum2-32);
+function fahrenheitToAll() {
+    const fahrenheitTemp = parseFloat(fahrenheitInput.value);
+    const celciusTemp = (fahrenheitTemp - 32) / 1.8;
+    const kelvinTemp = ((fahrenheitTemp - 32) / 1.8) + 273.15;
+    const reaumurTemp = 4/9 * (fahrenheitTemp - 32);
+    celciusInput.value = celciusTemp;
+    kelvinInput.value = kelvinTemp;
+    reaumurInput.value = reaumurTemp;
 }
 
-function temperatureConverter3(valNum3) {
-    valNum3 = parseFloat(valNum3);
-    document.getElementById("outputCelcius3").innerHTML=valNum3-273.15;
-    document.getElementById("outputFahrenheit3").innerHTML=((valNum3-273.15)*1.8)+32;
-    document.getElementById("outputReamur3").innerHTML=(valNum3-273.15)*(4/5);
+function kelvinToAll() {
+    const kelvinTemp = parseFloat(kelvinInput.value);
+    const celciusTemp = kelvinTemp - 273.15;
+    const fahrenheitTemp = ((kelvinTemp - 273.15)*1.8)+32;
+    const reaumurTemp = (kelvinTemp - 273.15) * (4/5);
+    celciusInput.value = celciusTemp;
+    fahrenheitInput.value = fahrenheitTemp;
+    reaumurInput.value = reaumurTemp;
 }
 
-function temperatureConverter4(valNum4) {
-    valNum4 = parseFloat(valNum4);
-    document.getElementById("outputCelcius4").innerHTML=valNum4*(5/4);
-    document.getElementById("outputFahrenheit4").innerHTML=(valNum4 * (9 / 4)) + 32;
-    document.getElementById("outputKelvin4").innerHTML=(valNum4 * (5 / 4)) + 273.15;
+function reaumurToAll() {
+    const reaumurTemp = parseFloat(reaumurInput.value);
+    const celciusTemp = reaumurTemp * (5/4);
+    const fahrenheitTemp = (reaumurTemp * (9/4))+ 32;
+    const kelvinTemp = (reaumurTemp * (5/4)) + 273.15;
+    celciusInput.value = celciusTemp;
+    fahrenheitInput.value = fahrenheitTemp;
+    kelvinInput.value = kelvinTemp;
 }
 
-function LengthConverter(valNum5) {
-    valNum5 = parseFloat(valNum5);
-    document.getElementById("outputKm").innerHTML=valNum5*1;
-    document.getElementById("outputHm").innerHTML=valNum5*10;
-    document.getElementById("outputDam").innerHTML=valNum5*100;
-    document.getElementById("outputM").innerHTML=valNum5*1000;
-    document.getElementById("outputDm").innerHTML=valNum5*10000;
-    document.getElementById("outputCm").innerHTML=valNum5*100000;
-    document.getElementById("outputMm").innerHTML=valNum5*1000000;
-}
+celciusInput.addEventListener('input', celciusToAll);
+fahrenheitInput.addEventListener('input', fahrenheitToAll);
+kelvinInput.addEventListener('input', kelvinToAll);
+reaumurInput.addEventListener('input', reaumurToAll);
