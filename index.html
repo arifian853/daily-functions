@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <title>Daily Functions</title>
+    <title>Daily Functions Converter</title>
     <head>
         
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/x-icon" href="img/programming.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/temp.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
@@ -14,20 +14,20 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
             <a data-aos="zoom-in-down" data-aos-duration="700" class="navbar-brand" href="https://arifian853.github.io" target="_blank">
-              <img class="img-logo-navbar" src="img/programming.png"> Arifian Saputra
+               Daily Functions
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse nav-item-bg-dr text-dark" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0" href="#about">ABOUT</a>
+                <li class="nav-item list-color active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 list-color" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item dropdown active">
-                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 dropdown-toggle list-color" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     SOCIAL
                   </a> 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -38,7 +38,7 @@
                   </div>
                 </li>
                 <li class="nav-item active">
-                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0" href="https://github.com/arifian853" target="_blank">GITHUB</a>
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 list-color" href="https://github.com/arifian853" target="_blank">GITHUB</a>
                 </li>
                 </li>
               </ul>
@@ -46,79 +46,32 @@
           </nav>
     </header>
     <body>
-        <br />
-        <br />
-
-        <h2 align="center">Temperature Converter</h2>
-        <p align="center"><b>For Famous and most used unit in the world. (Celcius,Fahrenheit,Kelvin,Réaumur)</b></p>
-
-        <br />
-        <div class="main-temp row">
-          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
-            <div id="celcius">
-              <label>Celcius</label>
-              <input type="number" placeholder=" Input Celcius"> <div class="float-right h4"> °C</div>
-            </div>
-            <br />
-            <div id="fahrenheit">
-              <label >Fahrenheit</label>
-              <input type="number" placeholder=" Input Fahrenheit">  <div class="float-right h4"> °F</div>
-            </div>
-            <br />
-            <div id="kelvin">
-              <label >Kelvin</label>
-              <input type="number" placeholder=" Input Kelvin">  <div class="float-right h4"> K</div>
-            </div>
-            <br />
-            <div id="reaumur">
-              <label >Réaumur</label>
-              <input type="number" placeholder=" Input Réaumur">  <div class="float-right h4"> °R</div>
-            </div>
-            <br />
-          </div>
-          <script src="script.js"></script>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2 align="center">Daily Functions Converter</h2>
+      <br />
+        <div class="main-div">
+          <button class="button-style"><a class="button-nav" href="TempConv.html" target="_blank">Temperature Converter</a></button>
+          <button class="button-style"><a class="button-nav" href="LenConv.html" target="_blank">Length Converter</a></button>
+          <button class="button-style"><a class="button-nav" href="TimeConv.html" target="_blank">Time Converter</a></button>
         </div>
-
         <br />
         <br />
-        <h2 align="center">Formula</h2>
         <br />
-
-        <div class="main-temp row">
-          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
-            <p>- Celcius to All</p>
-            <p class="formula">Formula : °F=(°C*1.8)+32</p>
-            <p class="formula">Formula : K=°C+273.15</p>
-            <p class="formula">Formula : °R=(4/5)*°C</p>
-            <hr />
-          </div>
-          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
-            <p>- Fahrenheit to All</p>
-            <p class="formula">Formula : °C=(°F-32)/1.8</p>
-            <p class="formula">Formula : K=((°F-32)/1.8)+273.15</p>
-            <p class="formula">Formula : °R= 4/9*(°F-32)</p>
-            <hr />
-          </div>
-          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
-            <p>- Kelvin to All</p>
-            <p class="formula">Formula : °C=K-273.15</p>
-            <p class="formula">Formula :°F=((K-273.15)*1.8)+32</p>
-            <p class="formula">Formula : °R= (K-273.15)*(4 / 5)</p>
-            <hr />
-          </div>
-          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
-            <p>- Réaumur to All</p>
-            <p class="formula">Formula : °C=°R * (5/4)</p>
-            <p class="formula">Formula :°F=(°R*(9/4)) + 32</p>
-            <p class="formula">Formula : K=(°R*(5/4)) + 273.15</p>
-          </div>
+        <div class="main-div-2">
+          <h3>Hello There !</h3>
+          <p>This is a web that contains some converters from temperature to time converter. Hope this apps useful for you guys !. Feel free to copy the code at my github account. It was at the right corner. At the navbar ! .
+            <br />
+            <br />
+            Another converter will be added soon ! .
+          </p>
+          <div>Icons made by <a class="attribution" href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a class="attribution" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
-       
-        <br />
-        <br />
-        
-        <footer>Copyright © Arifian Saputra , 2021. All rights reserved.</footer>
     </body>
+
+    <footer>Copyright © Arifian Saputra , 2021. All rights reserved.</footer>
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
