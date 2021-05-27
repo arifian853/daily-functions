@@ -63,6 +63,7 @@ body {
     background-color: #c6ffc1;
     color: black;
     padding: 2px;
+    width: 270px;
 }
 
 .card-column {
@@ -71,6 +72,7 @@ body {
     padding: 10px;
     box-shadow: 5px 5px 5px 0px black;
     width: 310px;
+    margin: auto;
 }
 
 input {
@@ -161,5 +163,12 @@ footer {
         margin: 20px;
         display: block;
 }
-     
+    .card-column {
+        border:2px solid #fffbdf;
+        background-color: #334443;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 0px black;
+        width: 310px;
+        display: block;
+    }
 }
