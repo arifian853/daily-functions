@@ -170,5 +170,6 @@ footer {
         box-shadow: 5px 5px 5px 0px black;
         width: 310px;
         display: block;
+        margin: auto;
     }
 }
