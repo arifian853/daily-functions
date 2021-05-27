@@ -50,29 +50,29 @@
         <br />
 
         <h2 align="center">Temperature Converter</h2>
-        <p align="center"><b>For Famous and most used unit in the world. (Celcius,Fahrenheit,Kelvin,Reaumur)</b></p>
+        <p align="center"><b>For Famous and most used unit in the world. (Celcius,Fahrenheit,Kelvin,Réaumur)</b></p>
 
         <br />
-        <div class="main-temp row-card">
-          <div class="card-column" data-aos="zoom-in-down" data-aos-duration="700">
+        <div class="main-temp row">
+          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
             <div id="celcius">
               <label>Celcius</label>
-              <input type="number" placeholder=" Input Celcius"> 
+              <input type="number" placeholder=" Input Celcius"> <div class="float-right h4"> °C</div>
             </div>
             <br />
             <div id="fahrenheit">
               <label >Fahrenheit</label>
-              <input type="number" placeholder=" Input Fahrenheit"> 
+              <input type="number" placeholder=" Input Fahrenheit">  <div class="float-right h4"> °F</div>
             </div>
             <br />
             <div id="kelvin">
               <label >Kelvin</label>
-              <input type="number" placeholder=" Input Kelvin">
+              <input type="number" placeholder=" Input Kelvin">  <div class="float-right h4"> K</div>
             </div>
             <br />
             <div id="reaumur">
               <label >Réaumur</label>
-              <input type="number" placeholder=" Input Réaumur"> 
+              <input type="number" placeholder=" Input Réaumur">  <div class="float-right h4"> °R</div>
             </div>
             <br />
           </div>
@@ -81,38 +81,43 @@
 
         <br />
         <br />
-        <br />
-        <h2 align="center">Length Converter</h2>
-        <p align="center"><b>All conversion from Milimeter (Mm) to Kilometer (Km)</b></p>
+        <h2 align="center">Formula</h2>
         <br />
 
-        <div class="main-length">
-
-          <div class="card-length-column" data-aos="zoom-in-down" data-aos-duration="700">
-            <h5><b>Kilometer (Km) to All</b></h5>
-            <br />
-            <p>
-            <label>Km (Kilometer) : </label> <br />
-            <input class="inputLength" id="inputM" type="number" placeholder="Kilometer" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
-            </p>
-            <p>- Kilometer : <span id="outputKm">  </span> Km</p>
-            <p class="formula">Formula : Km = Km * 1</p>
-            <p>- Hectometer : <span id="outputHm">  </span> Hm</p>
-            <p class="formula">Formula : Hm = Km * 10</p>
-            <p>- Decameter : <span id="outputDam">  </span> Dam</p>
-            <p class="formula">Formula : Dam = Km * 100</p>
-            <p>- Meter : <span id="outputM">  </span> M</p>
-            <p class="formula">Formula : M = Km * 1000</p>
-            <p>- Decimeter : <span id="outputDm">  </span> Dm</p>
-            <p class="formula">Formula : Dm = Km * 10000</p>
-            <p>- Centimeter : <span id="outputCm">  </span> Cm</p>
-            <p class="formula">Formula : Cm = Km * 100000</p>
-            <p>- Milimeter : <span id="outputMm">  </span> Mm</p>
-            <p class="formula">Formula : Mm = Km * 1000000</p>
+        <div class="main-temp row">
+          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
+            <p>- Celcius to All</p>
+            <p class="formula">Formula : °F=(°C*1.8)+32</p>
+            <p class="formula">Formula : K=°C+273.15</p>
+            <p class="formula">Formula : °R=(4/5)*°C</p>
+            <hr />
+          </div>
+          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
+            <p>- Fahrenheit to All</p>
+            <p class="formula">Formula : °C=(°F-32)/1.8</p>
+            <p class="formula">Formula : K=((°F-32)/1.8)+273.15</p>
+            <p class="formula">Formula : °R= 4/9*(°F-32)</p>
+            <hr />
+          </div>
+          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
+            <p>- Kelvin to All</p>
+            <p class="formula">Formula : °C=K-273.15</p>
+            <p class="formula">Formula :°F=((K-273.15)*1.8)+32</p>
+            <p class="formula">Formula : °R= (K-273.15)*(4 / 5)</p>
+            <hr />
+          </div>
+          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
+            <p>- Réaumur to All</p>
+            <p class="formula">Formula : °C=°R * (5/4)</p>
+            <p class="formula">Formula :°F=(°R*(9/4)) + 32</p>
+            <p class="formula">Formula : K=(°R*(5/4)) + 273.15</p>
+          </div>
         </div>
-
-        </div>
+       
+        <br />
+        <br />
         
+        <footer>Copyright © Arifian Saputra , 2021. All rights reserved.</footer>
     </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
