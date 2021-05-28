@@ -43,10 +43,8 @@ body {
     padding: 20px;
     margin : auto;
     background-color: #34656d;
-    border-radius:10px ;
     color: #fffbdf;
     box-shadow: 5px 5px 5px 0px black;
-    width: fit-content;
 }
 
 .main-div-2 {
@@ -55,7 +53,6 @@ body {
     background-color: #34656d;
     color: #fffbdf;
     box-shadow: 5px 5px 5px 0px black;
-    width: fit-content;
 }
 
 .formula {
@@ -64,6 +61,7 @@ body {
     color: black;
     padding: 2px;
     width: 270px;
+    margin: auto;
 }
 
 .card-column {
@@ -90,11 +88,13 @@ input {
     color: #fffbdf;
     cursor: pointer;
     margin: auto;
+    display: block;
 }
 
 a.button-nav {
     text-decoration: none;
     color: #fffbdf;
+    margin: auto;
 }
 
 .button-style:hover {
@@ -160,9 +160,9 @@ footer {
         width: 210px;
         color: #fffbdf;
         cursor: pointer;
-        margin: 20px;
+        margin: auto;
         display: block;
-}
+    }    
     .card-column {
         border:2px solid #fffbdf;
         background-color: #334443;
