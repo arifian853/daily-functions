@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <title>Temperature Converter</title>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/temp.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <a data-aos="zoom-in-down" data-aos-duration="700" class="navbar-brand" href="index.html">
+               Daily Functions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-item-bg-dr text-dark" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item list-color active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 list-color" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 dropdown-toggle list-color" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SOCIAL
+                  </a> 
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.facebook.com/arifian.syaputra.9/" target="_blank" > Facebook</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/arifiansaputra_/" target="_blank" > Instagram</a>
+                    <a class="dropdown-item" href="https://twitter.com/ArifianSaputra1" target="_blank" > Twitter</a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/arifian-saputra-08135a178/" target="_blank" > LinkedIn</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a data-aos="fade-right" data-aos-duration="700" class="nav-link link-0 list-color" href="https://github.com/arifian853" target="_blank">GITHUB</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <body>
+        <br />
+        <br />
+
+        <h2 align="center">Temperature Converter</h2>
+        <p align="center"><b>For famous and most used unit in the world. (Celcius, Fahrenheit, Kelvin, Réaumur)</b></p>
+
+        <br />
+        <div class="main-div">
+          <div class="card-column column" data-aos="zoom-in-down" data-aos-duration="700">
+            <div id="celcius">
+              <label>Celcius</label>
+              <input type="number" placeholder=" Input Celcius"> <div class="float-right h4"> °C</div>
+            </div>
+            <br />
+            <div id="fahrenheit">
+              <label >Fahrenheit</label>
+              <input type="number" placeholder=" Input Fahrenheit">  <div class="float-right h4"> °F</div>
+            </div>
+            <br />
+            <div id="kelvin">
+              <label >Kelvin</label>
+              <input type="number" placeholder=" Input Kelvin">  <div class="float-right h4"> K</div>
+            </div>
+            <br />
+            <div id="reaumur">
+              <label >Réaumur</label>
+              <input type="number" placeholder=" Input Réaumur">  <div class="float-right h4"> °R</div>
+            </div>
+            <br />
+          </div>
+          <script src="script-temp.js"></script>
+        </div>
+        
+        <br />
+        <br />
+        <h2 align="center">Formula</h2>
+        <br />
+
+        <div align="center" class="main-div-2">
+
+            <p>- Celcius to All</p>
+            <p class="formula">Formula : °F=(°C*1.8)+32</p>
+            <p class="formula">Formula : K=°C+273.15</p>
+            <p class="formula">Formula : °R=(4/5)*°C</p>
+            <br />
+            <p>- Fahrenheit to All</p>
+            <p class="formula">Formula : °C=(°F-32)/1.8</p>
+            <p class="formula">Formula :  K=((°F-32)/1.8)+273.15</p>
+            <p class="formula">Formula : °R= 4/9*(°F-32)</p>
+            <br />
+            <p>- Kelvin to All</p>
+            <p class="formula">Formula : °C=K-273.15</p>
+            <p class="formula">Formula : °F=((K-273.15)*1.8)+32</p>
+            <p class="formula">Formula : °R= (K-273.15)*(4 / 5)</p>
+            <br />
+            <p>- Réaumur to All</p>
+            <p class="formula">Formula : °C=°R * (5/4)</p>
+            <p class="formula">Formula : °F=(°R*(9/4)) + 32</p>
+            <p class="formula">Formula : K=(°R*(5/4)) + 273.15</p>
+            <br />
+          </div>
+        </div>
+       
+        <br />
+        <br />
+        <h4 align="center">Another Converter</h4>
+        <br />
+        <div class="main-div">
+          <p align="center"> <a class="button-nav" href="TempConv.html" target="_blank"> <button data-aos="fade-right" data-aos-duration="700" class="button-style">Temperature Converter</button></a></p>
+          <p align="center"> <a class="button-nav" href="LenConv.html" target="_blank"> <button data-aos="fade-left" data-aos-duration="700" class="button-style">Length Converter</button></a></p>
+          <p align="center"> <a class="button-nav" href="TimeConv.html" target="_blank"> <button data-aos="fade-right" data-aos-duration="700" class="button-style">Time Converter</button></a></p>
+        </div>
+        <br />
+        <br />
+    </body>
+    <p align="center"> Everything is vertical because this app <br /> is optimized for mobile user :) </p>
+    <br />
+    <footer>Copyright © Arifian Saputra , 2021. All rights reserved.</footer>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>  
