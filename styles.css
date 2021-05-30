@@ -87,19 +87,18 @@ input {
     width: 210px;
     color: #fffbdf;
     cursor: pointer;
-    margin: auto;
     display: block;
 }
 
 a.button-nav {
     text-decoration: none;
     color: #fffbdf;
-    margin: auto;
 }
 
 .button-style:hover {
     opacity: 0.8;
     box-shadow: 5px 5px 5px 0px black;
+    color :#c6ffc1;
 }
 
 .attribution {
@@ -160,7 +159,6 @@ footer {
         width: 210px;
         color: #fffbdf;
         cursor: pointer;
-        margin: auto;
         display: block;
     }    
     .card-column {
