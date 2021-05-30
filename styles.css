@@ -73,6 +73,15 @@ body {
     margin: auto;
 }
 
+.card-column-len {
+    border:2px solid #fffbdf;
+    background-color: #334443;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+    width: 340px;
+    margin: auto;
+}
+
 input {
     width: 251px;
     height: 40px;
