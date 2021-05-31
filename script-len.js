@@ -131,7 +131,117 @@ function MmtoAll() {
 
 // US Customary Units functions
 
+function YardstoAll() {
+    const Yardsval = parseFloat(inputYards.value);
+    const Feetval = Yardsval * 3;
+    const Inchesval = Yardsval * 36;
+    const Milesval = Yardsval * 0.00056818;
+    const KmUSval = Yardsval / 1093.6;
+    const MUSval = Yardsval / 1.0936;
+    const CmUSval = Yardsval / 0.010936;
+    inputFeet.value = Feetval;
+    inputInches.value = Inchesval;
+    inputMiles.value = Milesval;
+    inputKmUS.value = KmUSval;
+    inputMUS.value = MUSval;
+    inputCmUS.value = CmUSval;
+}
 
+function FeettoAll() {
+    const Feetval = parseFloat(inputFeet.value);
+    const Yardsval = Feetval * 0.33333;
+    const Inchesval = Feetval * 12;
+    const Milesval = Feetval * 0.00018939;
+    const KmUSval = Feetval / 3280.8;
+    const MUSval = Feetval /  3.2808;
+    const CmUSval = Feetval / 0.032808;
+    inputYards.value = Yardsval;
+    inputInches.value = Inchesval;
+    inputMiles.value = Milesval;
+    inputKmUS.value = KmUSval;
+    inputMUS.value = MUSval;
+    inputCmUS.value = CmUSval;
+}
+
+function InchestoAll() {
+    const Inchesval = parseFloat(inputInches.value);
+    const Yardsval = Inchesval * 0.027778;
+    const Feetval = Inchesval * 0.083333;
+    const Milesval = Inchesval * 0.000015783;
+    const KmUSval = Inchesval / 39370;
+    const MUSval = Inchesval / 39.370;
+    const CmUSval = Inchesval / 0.39370;
+    inputFeet.value = Feetval;
+    inputYards.value = Yardsval;
+    inputMiles.value = Milesval;
+    inputKmUS.value = KmUSval;
+    inputMUS.value = MUSval;
+    inputCmUS.value = CmUSval;
+}
+
+function MilestoAll() {
+    const Milesval = parseFloat(inputMiles.value);
+    const Yardsval = Milesval * 1760;
+    const Feetval = Milesval * 5280;
+    const Inchesval = Milesval * 63360;
+    const KmUSval = Milesval / 0.62137;
+    const MUSval = Milesval / 0.00062137;
+    const CmUSval = Milesval / 0.0000062137;
+    inputYards.value = Yardsval;
+    inputFeet.value = Feetval;
+    inputInches.value = Inchesval;
+    inputKmUS.value = KmUSval;
+    inputMUS.value = MUSval;
+    inputCmUS.value = CmUSval;
+}
+
+function KmUStoAll() {
+    const KmUSval = parseFloat(inputKmUS.value);
+    const Yardsval = KmUSval * 1093.6;
+    const Feetval = KmUSval * 3280.8;
+    const Inchesval = KmUSval * 39370;
+    const Milesval = KmUSval * 0.62137;
+    const MUSval = KmUSval * 1000;
+    const CmUSval = KmUSval * 100000;
+    inputYards.value = Yardsval;
+    inputFeet.value = Feetval;
+    inputInches.value = Inchesval;
+    inputMiles.value = Milesval;
+    inputMUS.value = MUSval;
+    inputCmUS.value = CmUSval;
+}
+
+function MUStoAll() {
+    const MUSval = parseFloat(inputMUS.value);
+    const Yardsval = MUSval * 1.0936;
+    const Feetval = MUSval * 3.2808;
+    const Inchesval = MUSval * 39.370;
+    const Milesval = MUSval * 0.00062137;
+    const KmUSval = MUSval / 1000;
+    const CmUSval = MUSval * 100;
+    inputYards.value = Yardsval;
+    inputFeet.value = Feetval;
+    inputInches.value = Inchesval;
+    inputMiles.value = Milesval;
+    inputKmUS.value = KmUSval;
+    inputCmUS.value = CmUSval;
+}
+
+function CmUStoAll() {
+    const CmUSval = parseFloat(inputCmUS.value);
+    const Yardsval = CmUSval * 0.010936;
+    const Feetval = CmUSval * 0.032808;
+    const Inchesval = CmUSval * 0.39370;
+    const Milesval = CmUSval * 0.0000062137;
+    const KmUSval = CmUSval / 100000;
+    const MUSval = CmUSval / 100;
+    inputYards.value = Yardsval;
+    inputFeet.value = Feetval;
+    inputInches.value = Inchesval;
+    inputMiles.value = Milesval;
+    inputKmUS.value = KmUSval;
+    inputMUS.value = MUSval;
+}
 
 // International SI units event listener
 inputKilometer.addEventListener('input', KmtoAll);
@@ -143,3 +253,11 @@ inputCentimeter.addEventListener('input', CmtoAll);
 inputMilimeter.addEventListener('input', MmtoAll);
 
 // US Customary Units event listener
+
+inputYards.addEventListener('input', YardstoAll);
+inputFeet.addEventListener('input', FeettoAll);
+inputInches.addEventListener('input', InchestoAll);
+inputMiles.addEventListener('input', MilestoAll);
+inputKmUS.addEventListener('input', KmUStoAll);
+inputMUS.addEventListener('input', MUStoAll);
+inputCmUS.addEventListener('input', CmUStoAll);
