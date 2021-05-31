@@ -67,6 +67,7 @@ body {
 .img-formula {
     width: 350px;
     height: 250px;
+    box-shadow: 5px 5px 5px 0px black
 }
 
 hr {
