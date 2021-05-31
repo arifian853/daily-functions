@@ -64,6 +64,17 @@ body {
     margin: auto;
 }
 
+.img-formula {
+    width: 350px;
+    height: 250px;
+}
+
+hr {
+    text-decoration:solid;
+    background-color: #334443;
+    height: 2px;
+}
+
 .card-column {
     border:2px solid #fffbdf;
     background-color: #334443;
