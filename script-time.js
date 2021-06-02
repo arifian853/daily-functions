@@ -1,0 +1,10 @@
+const inputYears = document.querySelector ('#Years > input');
+const inputMonths = document.querySelector ('#Months > input');
+const inputWeeks = document.querySelector ('#Weeks > input');
+const inputDays = document.querySelector ('#Days > input');
+const inputHours = document.querySelector ('#Hours > input');
+const inputMinutes = document.querySelector ('#Minutes > input');
+const inputSeconds = document.querySelector ('#Seconds > input');
+const inputMilisecs = document.querySelector ('#Miliseconds > input');
+const inputMicrosecs = document.querySelector ('#Microseconds > input');
+const inputNanosecs = document.querySelector ('#Nanoseconds > input')
