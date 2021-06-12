@@ -31,4 +31,27 @@ function YearstoAll() {
     inputNanosecs.value = Nanosecval;
 }
 
+function MonthstoAll() {
+    const Monthsval = parseFloat(inputMonths.value);
+    const Yearsval = Monthsval * 0.08;
+    const Weeksval = Monthsval * 4.35;
+    const Daysval = Monthsval * 30.44;
+    const Hoursval = Monthsval * 730.5;
+    const Minutesval = Monthsval * 43830;
+    const Secsval = Monthsval * 2629800;
+    const Msval = Monthsval * 2629800000;
+    const Microsecval = Monthsval * 2.63e12;
+    const Nanosecval = Monthsval * 2.63e15;
+    inputYears.value = Yearsval;
+    inputWeeks.value = Weeksval;
+    inputDays.value = Daysval;
+    inputHours.value = Hoursval;
+    inputMinutes.value = Minutesval;
+    inputSeconds.value = Secsval;
+    inputMilisecs.value = Msval;
+    inputMicrosecs.value = Microsecval;
+    inputNanosecs.value = Nanosecval;
+}
+
 inputYears.addEventListener('input',YearstoAll);
+inputMonths.addEventListener('input',MonthstoAll);
